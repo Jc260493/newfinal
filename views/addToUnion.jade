@@ -1,0 +1,75 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+        // EMP TO UNION
+        
+        #addEmpToUnion
+            fieldset
+                h2 Add Employee To Union
+                p Employee Email 
+                input#inputEmp(type='text', placeholder='Employee Email')
+                br
+                a(class='viewallemps', href='#')     View All Employees
+                p Union Name
+                input#inputUnion(type='text', placeholder='Union Name')
+                br
+                a(class='viewallunions', href='#')     View All Unions
+                p Weekly Deduction
+                input#inputDeduction(type='text', placeholder='Weekly Deduction')
+                br
+                button#btnAddEmpToUnion Add Employee to Union
+        // /EMP TO UNION
+
+        // USER LIST
+        
+        #userListUnion
+            h2 Employee List
+            table
+                thead
+                    th Email
+                    th Name
+
+                tbody
+        // /USER LIST
+
+
+        // Union List
+        
+        #unionList
+            h2 Union List
+            table
+                thead
+                    th Union Name
+                    th Description
+                tbody
+        // /Union List
+
+        // ADD UNION
+        #addUnion
+            h2 Add New Union
+            fieldset
+                p Union Name
+                input#inputUnion(type='text', placeholder='Union Name')
+                p Description
+                input#inputDescription(type='text', placeholder='Description')
+                br
+                button#btnAddUnion Add Union
+        // /ADD UNION
+
+
+
+
+
+
+
+
+
+
+
+    // /WRAPPER

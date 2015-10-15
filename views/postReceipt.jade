@@ -1,0 +1,23 @@
+
+extends layout
+
+block content
+    h1= title
+    a(href='/admin') HOME YO
+
+    // Wrapper
+    #wrapper
+
+
+        // POST RECEIPT
+        
+        #postReceipt
+            fieldset
+                h2 Post Sales Receipt
+                input#inputAmount(type='text', placeholder='Sale Amount ($)')
+                input#inputDescription(type='text', placeholder='Description')
+                br
+                button#btnPostReceipt Post Receipt
+        // /POST RECEIPT
+
+    // /WRAPPER

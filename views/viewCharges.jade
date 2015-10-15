@@ -1,0 +1,92 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+
+
+        // FILTER OPTIONS
+        h2 Filter Charges
+        #filterType
+            table
+                thead
+                    th Filter By Employee
+                    th Filter By Union
+                    th View All
+                tbody
+                    tr 
+                    td 
+                        a(href='#' class='Emp') Filter Employee
+                    td 
+                        a(href='#' class='Union') Filter Union
+                    td
+                        a(href='#' class='All') View All Employees
+                    
+                    
+        // /FILTER OPTIONS
+
+
+        // FILTER EMP
+        
+        #filterEmp
+            fieldset
+                p Filter By Employee: 
+                input#inputEmail(type='text', placeholder='Email')
+                br
+                button#btnFilterEmp Search
+        // /FILTER EMP
+
+        // FILTER UNION
+        
+        #filterUnion
+            fieldset
+                p Filter By Union: 
+                input#inputEmail(type='text', placeholder='Email')
+                br
+                button#btnFilterUnion Search
+        // /FILTER UNION
+
+
+
+        // CHARGES
+        h2 Previous Charges
+        #unionCharges
+            table
+                thead
+                    th Date Logged
+                    th Employee
+                    th Union
+                    th Amount
+                tbody
+        // /CHARGES
+
+        // CHARGES BY EMP
+        #unionCharges2
+            table
+                thead
+                    th Date Logged
+                    th Employee
+                    th Union
+                    th Amount
+                tbody
+        // /CHARGES2 BY EMP
+
+        // CHARGES BY UNION
+        #unionCharges3
+            table
+                thead
+                    th Date Logged
+                    th Employee
+                    th Union
+                    th Amount
+                tbody
+        // /CHARGES BY UNION
+
+
+
+
+    // /WRAPPER

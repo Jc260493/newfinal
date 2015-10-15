@@ -1,0 +1,207 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	text-align: center;
+	background-color: #FFDEAD;
+
+	min-height: 100%;
+}
+
+html {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	text-align: center;
+	background-color: #434343;
+
+
+	min-height: 100%;
+}
+
+
+
+#head {
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	text-align: center;
+	background-color: #FFDEAD;
+	padding: 1%;
+}
+
+#body {
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	text-align: center;
+	background-color: #FFDEAD;
+	padding: 1%;
+}
+
+
+#updateUserW{
+    display: none;
+}
+
+#updateUserC{
+    display: none;
+}
+
+#updateUserS{
+    display: none;
+}
+
+#addWeekly{
+    display: none;
+}
+
+#addCommision{
+    display: none;
+}
+
+#addSalary{
+    display: none;
+}
+
+#loginWeeklyPanel{
+    display: none;
+}
+
+#loginSalaryPanel{
+    display: none;
+}
+
+#loginCommisionPanel{
+    display: none;
+}
+
+#loginAdminPanel{
+    display: none;
+}
+
+#userListW{
+	display: none;
+}
+
+#userListC{
+	display: none;
+}
+
+#userListS{
+	display: none;
+}
+
+#unionCharges2{
+	display: none;
+}
+
+#unionCharges3{
+	display: none;
+}
+
+#filterUnion{
+	display: none;
+}
+
+#filterEmp{
+	display: none;
+}
+
+#logout{
+    display: none;
+}
+
+#userListUnion{
+    display: none;
+}
+
+#unionList{
+    display: none;
+}
+
+#addUnion{
+    display: none;
+}
+
+input{
+   text-align:center;
+}
+
+
+	table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+		margin: 0 auto;
+	}
+		table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+button {
+	display:inline-block;
+min-width: 150px;
+width: 150px;
+padding:5px 10px;
+
+}
+}
+
+
+
+
+fieldset {
+	border-style : none;
+	border-width: 0px;
+	padding:0;
+	margin:0;
+}
+
+#titlemain {
+	font-size: 50px;
+	
+}
+
+#titlemain a{
+	text-decoration: none;
+	color: black;
+}
+
+#logoutbtn{
+	color: #EE0000;
+	font-weight: bold;
+}
+
+#homebtn{
+	color: #104E8B;
+	font-weight: bold;
+}

@@ -1,0 +1,39 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+
+
+
+        // UPDATE USER
+        #updateUserPanel
+        
+        #updateUser
+            fieldset
+                h2 Update User
+                p First Name
+                input#updateFirstName(type='text', placeholder='First Name')
+                p Initial
+                input#updateInitial(type='text', placeholder='Initial')
+                p Last Name
+                input#updateLastName(type='text', placeholder='Last Name')
+                p Street Name
+                input#updateNumber(type='text', placeholder='Street Number')
+                p Street
+                input#updateStreet(type='text', placeholder='Street')
+                p Suburb
+                input#updateSuburb(type='text', placeholder='Suburb')
+                p Contact Number
+                input#updateContact(type='text', placeholder='Contact')
+                br
+                button#btnUpdateUser Update User
+        // /UPDATE USER
+
+
+
+    // /WRAPPER

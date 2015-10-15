@@ -1,0 +1,78 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+        // USER LIST
+        h2 Employee List
+        #userList12
+            table
+                thead
+                    th Email
+                    th Change To Weekly
+                    th Change To Commision  
+                    th Change To Salary
+                    th Update Current Pay Info
+                tbody
+        // /USER LIST
+
+
+        // UPDATE TO WEEKLY
+        #updateUserPanelW
+        
+        #updateUserW
+            fieldset
+                h2 Update To Weekly
+                p Weekly Pay ($/week)
+                input#updateWeeklyPayW(type='text', placeholder='Weekly Rate')
+                br
+                button#btnUpdatePayType1 Update Pay Type
+        // /UPDATE TO WEEKLY
+
+
+
+
+
+        // UPDATE TO COMMISION
+        #updateUserPanelC
+        
+        #updateUserC
+            fieldset
+                h2 Update To Commision
+                p Commision Rate (%)
+                input#updateCommisionC(type='text', placeholder='Commision Rate')
+                p Annual Rate ($/year)
+                input#updateAnnualRateC(type='text', placeholder='Annual Rate')
+                br
+                p Target Hours (hours/week)
+                input#updateTargetHoursC(type='text', placeholder='Target Hours')
+                br
+                button#btnUpdatePayType2 Update Pay Type
+        // /UPDATE TO COMMISION
+
+
+
+
+
+        // UPDATE TO SALARY
+        #updateUserPanelS
+        
+        #updateUserS
+            fieldset
+                h2 Update To Salary
+                p Annual Rate ($/year)
+                input#updateAnnualRateS(type='text', placeholder='Annual Rate')
+                br
+                p Target Hours (hours/week)
+                input#updateTargetHoursS(type='text', placeholder='Target Hours')
+                br
+                button#btnUpdatePayType3 Update Pay Type
+        // /UPDATE TO SALARY
+
+
+
+    // /WRAPPER

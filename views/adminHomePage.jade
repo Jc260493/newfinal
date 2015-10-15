@@ -1,0 +1,80 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+        h1 Admin Home Page
+
+        h2 Manage Employees
+        button(onclick="move1()") Add User
+        script.
+            function move1() {
+            window.location.href = '/addUser'
+            }
+        br
+            
+        button(onclick="move2()") Remove User
+        script.
+            function move2() {
+            window.location.href = '/removeUser'
+            }
+        br
+            
+        button(onclick="move3()") View Users
+        script.
+            function move3() {
+            window.location.href = '/viewUsers'
+            }
+        br
+
+        button(onclick="move8()") Update Pay Type
+        script.
+            function move8() {
+            window.location.href = '/updatePayType'
+            }
+        
+        h2 Manage Unions
+
+        button(onclick="move11()") Add Employee to Union
+        script.
+            function move11() {
+            window.location.href = '/addToUnion'
+            }
+        br
+        
+        button(onclick="move5()") Post Union Charge
+        script.
+            function move5() {
+            window.location.href = '/postCharge'
+            }
+        br
+
+        button(onclick="move9()") View Previous Union Charges
+        script.
+            function move9() {
+            window.location.href = '/viewCharges'
+            }
+        br
+
+        h2 Manage Time Cards
+        
+        button(onclick="move6()") Review Time Cards
+        script.
+            function move6() {
+            window.location.href = '/viewTimeCards'
+            }
+        br
+
+        button(onclick="move7()") Pay Employees
+        script.
+            function move7() {
+            window.location.href = '/payEmployees'
+            }
+
+
+
+    // /WRAPPER

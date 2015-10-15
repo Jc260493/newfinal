@@ -1,0 +1,58 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+
+        // ADD CHARGE
+        
+        #postCharge
+            h2 Post Union Charge
+            fieldset
+                p From
+                input#inputFromID(type='text', placeholder='Employee Email')
+                br
+                a(class='viewallemps', href='#')     View All Employees
+                br
+                p To
+                input#inputToID(type='text', placeholder='Union Name')
+                br
+                a(class='viewallunions', href='#')     View All Unions
+                br
+                p For
+                input#inputAmount(type='text', placeholder='Charge Amount ($)')
+                br
+                button#btnPostCharge Post Charge
+        // /ADD CHARGE
+
+
+
+        // USER LIST
+        
+        #userListUnion
+            h2 Employee List
+            table
+                thead
+                    th Email
+                    th Name
+
+                tbody
+        // /USER LIST
+
+
+        // Union List
+        
+        #unionList
+            h2 Union List
+            table
+                thead
+                    th Union Name
+                    th Description
+                tbody
+        // /Union List
+
+    // /WRAPPER

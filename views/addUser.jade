@@ -1,0 +1,144 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+
+        // CHOOSE TYPE
+        h2 Choose New Employee Type
+        #chooseType
+            table
+                thead
+                    th Weekly
+                    th Commision
+                    th Salary
+                tbody
+                    tr 
+                    td 
+                        a(href='#' class='W') Add Weekly Employee
+                    td 
+                        a(href='#' class='C') Add Commision Employee
+                    td
+                        a(href='#' class='S') Add Salary Employee
+                    
+                    
+        // /CHOOSE TYPE
+
+
+        // ADD WEEKLY
+        #addWeekly
+            h2 Add Weekly User
+            fieldset
+                p Email
+                input#inputEmail(type='text', placeholder='Email')
+                p Name
+                input#inputFirstName(type='text', placeholder='First Name')
+                input#inputInitial(type='text', placeholder='Initial')
+                input#inputLastName(type='text', placeholder='Last Name')
+                p DOB xxxx/yy/zzzz
+                input#inputDOB(type='date', placeholder='DOB')
+                p Address
+                input#inputNumber(type='text', placeholder='Street Number')
+                input#inputStreet(type='text', placeholder='Street')
+                input#inputSuburb(type='text', placeholder='Suburb')
+                p Contact Number
+                input#inputContact(type='text', placeholder='Contact')
+                p Gender
+                label Male
+                input(type="radio", id='gender', name="gender", val="male")
+                label Female
+                input(type="radio", id='gender', name="gender", val="female")
+                br
+                p Hourly Rate ($/hour)
+                input#inputWeeklyPay(type='text', placeholder='Hourly Rate')
+                br
+                button#btnAddWeeklyUser Add User
+        // /ADD WEEKLY
+
+
+
+
+
+
+
+        // ADD COMMISION
+        #addCommision
+            h2 Add Commision User
+            fieldset
+                p Email
+                input#inputEmail(type='text', placeholder='Email')
+                p Name
+                input#inputFirstName(type='text', placeholder='First Name')
+                input#inputInitial(type='text', placeholder='Initial')
+                input#inputLastName(type='text', placeholder='Last Name')
+                p DOB xxxx/yy/zzzz
+                input#inputDOB(type='date', placeholder='DOB')
+                p Address
+                input#inputNumber(type='text', placeholder='Street Number')
+                input#inputStreet(type='text', placeholder='Street')
+                input#inputSuburb(type='text', placeholder='Suburb')
+                p Contact Number
+                input#inputContact(type='text', placeholder='Contact')
+                p Gender
+                label Male
+                input(type="radio", id='gender', name="gender", val="male")
+                label Female
+                input(type="radio", id='gender', name="gender", val="female")
+                br
+                p Commision Rate (%)
+                input#inputCommision(type='text', placeholder='Commision Rate')
+                p Monthly Salary ($/month)
+                input#inputAnnualRate(type='text', placeholder='Monthly Salary')
+                br
+                p Weekly Target Hours (hours/week)
+                input#inputTargetHours(type='text', placeholder='Target Hours')
+                br
+                button#btnAddCommisionUser Add User
+        // /ADD COMMISION
+
+
+
+
+
+
+
+        // ADD SALARY
+        
+        #addSalary
+            h2 Add Salary User
+            fieldset
+                p Email
+                input#inputEmail(type='text', placeholder='Email')
+                p Name
+                input#inputFirstName(type='text', placeholder='First Name')
+                input#inputInitial(type='text', placeholder='Initial')
+                input#inputLastName(type='text', placeholder='Last Name')
+                p DOB xxxx/yy/zzzz
+                input#inputDOB(type='date', placeholder='DOB')
+                p Address
+                input#inputNumber(type='text', placeholder='Street Number')
+                input#inputStreet(type='text', placeholder='Street')
+                input#inputSuburb(type='text', placeholder='Suburb')
+                p Contact Number
+                input#inputContact(type='text', placeholder='Contact')
+                p Gender
+                label Male
+                input(type="radio", id='gender', name="gender", val="male")
+                label Female
+                input(type="radio", id='gender', name="gender", val="female")
+                br
+                p Monthly Salary ($/month)
+                input#inputAnnualRate(type='text', placeholder='Monthly Salary')
+                br
+                p Weekly Target Hours (hours/week)
+                input#inputTargetHours(type='text', placeholder='Target Hours')
+                br
+                button#btnAddSalaryUser Add User
+        // /ADD SALARY
+
+
+
+    // /WRAPPER

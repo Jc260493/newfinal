@@ -1,0 +1,29 @@
+doctype html
+html
+        head
+        #head
+            link(rel='stylesheet', href='/stylesheets/style.css')
+            a(href='/')
+                img(src='/images/payroll.png')
+                br
+
+            button#homebtn(onclick="moveHome()") Home
+            script.
+                function moveHome() {
+                window.location.href = '/'
+                }
+
+            #logout
+            
+                button#logoutbtn(onclick="moveLogout()") Logout
+                script.
+                    function moveLogout() {
+                    window.location.href = '/logout'
+                    }
+            
+        body
+        #body
+            block content
+            script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+            script(src='/javascripts/global.js')
+

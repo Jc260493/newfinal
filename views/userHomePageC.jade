@@ -1,0 +1,48 @@
+
+extends layout
+
+block content
+    h1= title
+
+    // Wrapper
+    #wrapper
+        
+        h2 Commision Employee Home Page
+
+        button(onclick="move5()") Enter Time Card
+        script.
+            function move5() {
+            window.location.href = '/postTimeCard'
+            }
+        br
+        
+        button(onclick="move2()") Enter Sales Receipt
+        script.
+            function move2() {
+            window.location.href = '/postReceipt'
+            }
+        br
+
+        button(onclick="move6()") View Previous Pay Cards
+        script.
+            function move6() {
+            window.location.href = '/viewPayCards'
+            }
+        br
+            
+        button(onclick="move3()") Change Password
+        script.
+            function move3() {
+            window.location.href = '/changePassword'
+            }
+        br
+
+        button(onclick="move4()") Update Personal Information
+        script.
+            function move4() {
+            window.location.href = '/updateUser'
+            }
+        br
+
+        
+    // /WRAPPER
